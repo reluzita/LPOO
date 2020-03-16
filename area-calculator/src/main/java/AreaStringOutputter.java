@@ -1,6 +1,6 @@
 public class AreaStringOutputter {
-    private AreaAggregator areaAggregator;
-    public AreaStringOutputter(AreaAggregator areaAggregator) {
+    private SumProvider areaAggregator;
+    public AreaStringOutputter(SumProvider areaAggregator) {
         this.areaAggregator = areaAggregator;
     }
     public String output() {
