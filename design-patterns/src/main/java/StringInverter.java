@@ -5,4 +5,9 @@ public class StringInverter implements StringTransformer {
         res.reverse();
         drink.setText(res.toString());
     }
+
+    @Override
+    public void undo(StringDrink drink) {
+        this.execute(drink);
+    }
 }

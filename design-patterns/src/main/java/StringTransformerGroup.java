@@ -12,4 +12,11 @@ public class StringTransformerGroup implements StringTransformer {
             t.execute(drink);
         }
     }
+
+    @Override
+    public void undo(StringDrink drink) {
+        for(StringTransformer t: transformers) {
+            t.undo(drink);
+        }
+    }
 }
